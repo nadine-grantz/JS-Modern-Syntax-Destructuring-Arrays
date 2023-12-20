@@ -8,14 +8,14 @@ const item = ["Egg", 0.25, 12];
 
 // example: export const [value1, value2] = array;
 export const [name, price, quantity] = item;
-console.log(item);
+console.log("EXERCISE 1:", name);
 
 // EXERCISE 2
 // Use array destructuring to extract the variables "firstNameOfChris", "lastNameOfChris" and "ageOfChris".
 
 const personChris = [12, "Chris", "Owen"];
 export const [ageOfChris, firstNameOfChris, lastNameOfChris] = personChris;
-console.log(personChris);
+console.log("EXERCISE 2:", personChris);
 
 // EXERCISE 3
 // Use array destructuring to extract the variables "firstNameOfAlex" and "lastNameOfAlex".
@@ -23,19 +23,24 @@ console.log(personChris);
 
 const personAlex = ["Alex", 12, "Main"];
 export const [firstNameOfAlex, , lastNameOfAlex] = personAlex; // überspringen mir zwei Komma also ,,
-console.log(personAlex);
+console.log("EXERCISE 3:", personAlex);
 
 // EXERCISE 4
 // Use array destructuring to extract the last name from the array
 // as variable called "lastName".
 
 const students = ["Christina", "Jon", "Alexandare"];
+export const [, , lastName] = students;
+console.log("EXERCISE 4:", students);
 
 // EXERCISE 5
 // Use array destructuring to extract all of the names from this nested array.
 // Assign the given order of students to variables called "student1" to "student5".
 
 const nestedStudents = ["Chris", ["Ahmad", "Antigoni"], ["Toby", "Sam"]];
+export const [student1, [student2, student3], [student4, student5]] =
+  nestedStudents;
+console.log("EXERCISE 5:", nestedStudents);
 
 // EXERCISE 6
 // Spread the values of the values array into the function call of the add function.
